@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="mobile-web-app-capable" content="yes">
+  <title>UMI_ARCGIS_API</title>
+  <link rel="stylesheet" href="https://js.arcgis.com/4.12/esri/themes/light/main.css">
+ 
+</head>
+
+<body>
+  <div id="root" style="background-color: #f5f4ee"></div>
+  <script>
+    var dojoConfig = {
+      async: true,
+      deps: ['@dojo/framework/shim/main'],
+      has: {
+        "esri-promise-compatibility": 1,  // Use native Promises by default
+        "esri-featurelayer-webgl": 1      // Enable FeatureLayer WebGL capabilities
+      },
+    };
+
+  </script>
+  <script src="https://js.arcgis.com/4.12/"></script>
+  <script>
+    require(['/umi.js'], function () { });
+  </script>
+</body>
+
+</html>
